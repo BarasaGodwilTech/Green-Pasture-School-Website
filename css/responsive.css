@@ -28,6 +28,7 @@
     .nav-menu a { font-size: 1.05rem; }
     .about-grid, .message-wrapper { grid-template-columns: 1fr; }
     .hero { height: 80vh; min-height: 520px; }
+    .hero-slider .slide { background-position: center 10%; }
     .hero-content { margin: 0 1rem; padding: 1.5rem; }
     .hero-content h1 { font-size: 2.35rem; }
     .hero-content .subtitle { font-size: 1.15rem; }
@@ -44,6 +45,7 @@
     .logo img { height: 42px; }
     .logo span { font-size: 1.15rem; }
     .hero { height: 78vh; min-height: 500px; }
+    .hero-slider .slide { background-position: center 8%; }
     .hero-content { margin: 0 0.6rem; padding: 1.2rem; border-radius: 16px; }
     .hero-content h1 { font-size: 1.95rem; }
     .hero-content .subtitle { font-size: 1.05rem; margin-bottom: 1.4rem; }

@@ -15,6 +15,21 @@
     box-sizing: border-box;
 }
 
+img,
+video,
+svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+
 body {
     font-family: var(--font-body);
     color: var(--dark);

@@ -1,9 +1,13 @@
 @media (max-width: 1024px) {
+    .container { padding: 0 1.5rem; }
     .program-grid { grid-template-columns: repeat(2,1fr); }
     .footer-grid { grid-template-columns: repeat(2,1fr); }
+    .hero-content { max-width: 720px; }
+    .hero-content h1 { font-size: 3rem; }
 }
 
 @media (max-width: 768px) {
+    .container { padding: 0 1.2rem; }
     .hamburger { display: block; }
     .nav-menu {
         position: fixed;
@@ -11,6 +15,8 @@
         left: -100%;
         background: white;
         width: 100%;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
         flex-direction: column;
         align-items: center;
         padding: 2rem;
@@ -19,6 +25,38 @@
         gap: 1.5rem;
     }
     .nav-menu.active { left: 0; }
+    .nav-menu a { font-size: 1.05rem; }
     .about-grid, .message-wrapper { grid-template-columns: 1fr; }
-    .hero-content h1 { font-size: 2.5rem; }
+    .hero { height: 80vh; min-height: 520px; }
+    .hero-content { margin: 0 1rem; padding: 1.5rem; }
+    .hero-content h1 { font-size: 2.35rem; }
+    .hero-content .subtitle { font-size: 1.15rem; }
+    .btn { padding: 0.85rem 1.6rem; margin-right: 0.75rem; }
+    .program-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .partner-logos { gap: 1.5rem; }
+    .vacancies-badge { font-size: 1.05rem; padding: 0.9rem 1.4rem; }
+    .strip-content { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 1rem; }
+    .logo img { height: 42px; }
+    .logo span { font-size: 1.15rem; }
+    .hero { height: 78vh; min-height: 500px; }
+    .hero-content { margin: 0 0.6rem; padding: 1.2rem; border-radius: 16px; }
+    .hero-content h1 { font-size: 1.95rem; }
+    .hero-content .subtitle { font-size: 1.05rem; margin-bottom: 1.4rem; }
+    .hero-buttons { display: flex; flex-direction: column; gap: 0.8rem; }
+    .btn { width: 100%; text-align: center; margin-right: 0; }
+    .section-header h2 { font-size: 1.9rem; }
+    .program-card { padding: 1.6rem 1.2rem; }
+    .message-wrapper { padding: 1.2rem; border-radius: 20px; }
+    .partner-logos img { height: 42px; }
+    .vacancies-badge { width: 100%; }
+}
+
+@media (max-width: 360px) {
+    .hero-content h1 { font-size: 1.75rem; }
+    .section-header h2 { font-size: 1.7rem; }
 }

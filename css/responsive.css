@@ -2,6 +2,8 @@
     .container { padding: 0 1.5rem; }
     .program-grid { grid-template-columns: repeat(2,1fr); }
     .footer-grid { grid-template-columns: repeat(2,1fr); }
+    .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-strip { grid-template-columns: repeat(2, 1fr); }
     .hero-content { max-width: 720px; }
     .hero-content h1 { font-size: 3rem; }
 }
@@ -35,9 +37,12 @@
     .btn { padding: 0.85rem 1.6rem; margin-right: 0.75rem; }
     .program-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; }
+    .testimonial-grid { grid-template-columns: 1fr; }
+    .gallery-strip { grid-template-columns: 1fr; }
     .partner-logos { gap: 1.5rem; }
     .vacancies-badge { font-size: 1.05rem; padding: 0.9rem 1.4rem; }
     .strip-content { flex-direction: column; align-items: flex-start; }
+    .slider-dots { bottom: 14px; }
 }
 
 @media (max-width: 480px) {
@@ -56,6 +61,7 @@
     .message-wrapper { padding: 1.2rem; border-radius: 20px; }
     .partner-logos img { height: 42px; }
     .vacancies-badge { width: 100%; }
+    .slider-dots { bottom: 12px; }
 }
 
 @media (max-width: 360px) {

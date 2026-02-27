@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="scroll-progress"></div>
     <div class="preloader">
         <div class="loader"></div>
     </div>
@@ -30,6 +31,9 @@
                 <li><a href="vocational.html">Vocational</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -92,16 +96,34 @@
 
             <div class="about-grid">
                 <div class="about-text animate-on-scroll">
-                    <form>
-                        <p style="margin-bottom: 1rem;">This form is a simple template. You can later connect it to email or a form service.</p>
-                        <div style="display: grid; gap: 1rem;">
-                            <input type="text" name="name" placeholder="Full Name" style="padding: 1rem; border-radius: 12px; border: 1px solid #dde5dd;">
-                            <input type="email" name="email" placeholder="Email Address" style="padding: 1rem; border-radius: 12px; border: 1px solid #dde5dd;">
-                            <input type="text" name="subject" placeholder="Subject" style="padding: 1rem; border-radius: 12px; border: 1px solid #dde5dd;">
-                            <textarea name="message" placeholder="Your Message" rows="6" style="padding: 1rem; border-radius: 12px; border: 1px solid #dde5dd;"></textarea>
-                            <button type="submit" class="btn btn-primary" style="border: none; cursor: pointer;">Send Message</button>
-                        </div>
-                    </form>
+                    <div class="form-card">
+                        <form class="contact-form" data-contact-form>
+                            <p style="margin-bottom: 1rem;">This form is a simple template. You can later connect it to email or a form service.</p>
+                            <div class="form-grid">
+                                <div class="field">
+                                    <i class="fas fa-user"></i>
+                                    <input class="input" type="text" name="name" placeholder="Full Name" required>
+                                </div>
+                                <div class="field">
+                                    <i class="fas fa-envelope"></i>
+                                    <input class="input" type="email" name="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="field">
+                                    <i class="fas fa-pen"></i>
+                                    <input class="input" type="text" name="subject" placeholder="Subject" required>
+                                </div>
+                                <div>
+                                    <textarea class="textarea" name="message" placeholder="Your Message" rows="6" required></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary" style="border: none; cursor: pointer;">Send Message</button>
+                                    <div class="form-success" data-form-success>
+                                        <strong>Message sent!</strong> Thank you for reaching out. We’ll get back to you soon.
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="about-stats animate-on-scroll">
